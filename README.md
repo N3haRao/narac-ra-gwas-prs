@@ -159,6 +159,69 @@ RA_h2_Asian.log
 
 ---
 
+# Results Snapshot
+
+## Quality Control
+
+* Initial SNPs: **544,276**
+* Post-QC SNPs: **502,304**
+* Final individuals retained: **2062**
+
+  * 868 RA cases
+  * 1194 controls
+* LD-pruned SNPs used for PCA: **79,644**
+
+No individuals were removed during mind filtering, preserving full study power.
+
+---
+
+## Population Stratification (PCA)
+
+ANOVA testing of eigenvectors revealed significant case-control differences in:
+
+* **PC1 (p = 1.62e-18)**
+* **PC2 (p = 3.56e-26)**
+* **PC4 (p = 2.09e-61)**
+
+PC1 and PC4 were selected as covariates in downstream GWAS models to control for population structure.
+
+---
+
+## Sex-Stratified GWAS
+
+### Genomic Inflation
+
+| Analysis               | Lambda GC |
+| ---------------------- | --------- |
+| Female (no covariates) | 1.01      |
+| Female (with PCs)      | 1.01      |
+| Male (no covariates)   | 1.02      |
+| Male (with PCs)        | 1.01      |
+
+These values indicate minimal inflation and effective control of confounding.
+
+---
+
+## Association Results
+
+* Strong genome-wide significance in the **HLA region (chromosome 6p21)** in both males and females.
+* No additional loci reached genome-wide significance outside the HLA region.
+* Suggestive signals observed on chromosomes 8, 9, and 20.
+
+These findings are consistent with known RA genetic architecture.
+
+---
+
+## SNP Heritability (LD Score Regression)
+
+Using summary statistics from Okada et al. (2014):
+
+* European and Asian heritability estimates were calculated
+* Liability-scale conversion applied
+* Cross-ancestry comparison performed
+
+---
+
 # Key Methodological Strengths
 
 - Mixed-model GWAS accounting for relatedness
