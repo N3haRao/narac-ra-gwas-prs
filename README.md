@@ -3,8 +3,11 @@
 ### Sex-Stratified GWAS, Population Stratification Control, and Polygenic Risk Scoring in Rheumatoid Arthritis (NARAC)
 
 **Author:** Neha Rao
+
 **Tools:** PLINK · EIGENSOFT · GMMAT · PRSice2 · LDSC · R · Bash · Python
+
 **Environment:** HPC (Linux cluster)
+
 **Study Type:** Case-control GWAS with mixed model association testing
 
 ---
