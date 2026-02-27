@@ -12,7 +12,7 @@
 
 ---
 
-## 🔎 Project Overview
+## Project Overview
 
 This repository contains a fully reproducible genome-wide association analysis (GWAS) pipeline for **Rheumatoid Arthritis (RA)** using data from the **North American Rheumatoid Arthritis Consortium (NARAC)**.
 
@@ -28,7 +28,7 @@ This project demonstrates end-to-end genetic epidemiology workflow design, stati
 
 ---
 
-## 🧬 Dataset
+## Dataset
 
 **North American Rheumatoid Arthritis Consortium (NARAC)**
 
@@ -47,13 +47,13 @@ Acknowledgment: Genetic Analysis Workshop 16 (GAW16)
 
 ---
 
-# 📊 Analysis Workflow
+# Analysis Workflow
 
 Below is the full analytical pipeline implemented in this project.
 
 ---
 
-## 1️⃣ Genotype Quality Control (PLINK)
+## Genotype Quality Control (PLINK)
 
 **SNP-Level Filters**
 
@@ -73,7 +73,7 @@ cleaned/ra_cleaned.*
 
 ---
 
-## 2️⃣ LD Pruning + PCA (EIGENSOFT smartpca)
+## LD Pruning + PCA (EIGENSOFT smartpca)
 
 To control for population stratification:
 
@@ -91,7 +91,7 @@ pca/RA_pcs.txt
 
 ---
 
-## 3️⃣ Sex-Stratified GWAS (Mixed Model — GMMAT)
+## Sex-Stratified GWAS (Mixed Model — GMMAT)
 
 To account for relatedness and residual structure:
 
@@ -124,7 +124,7 @@ gwas/test.glmm.score.male.*
 
 ---
 
-## 4️⃣ Polygenic Risk Scores (PRSice2)
+## Polygenic Risk Scores (PRSice2)
 
 PRS computed using external GWAS summary statistics:
 
@@ -142,7 +142,7 @@ prs/PRS_Asian.*
 
 ---
 
-## 5️⃣ SNP Heritability (LD Score Regression)
+## SNP Heritability (LD Score Regression)
 
 * Summary statistics munged using `munge_sumstats.py`
 * Heritability estimated using ancestry-matched LD scores
@@ -157,18 +157,18 @@ RA_h2_Asian.log
 
 ---
 
-# 📈 Key Methodological Strengths
+# Key Methodological Strengths
 
-✔ Mixed-model GWAS accounting for relatedness
-✔ Explicit correction for population stratification
-✔ Sex-stratified analysis
-✔ Cross-ancestry PRS comparison
-✔ HPC reproducible pipeline design
-✔ Integration of Bash, R, Python, and external genomic tools
+- Mixed-model GWAS accounting for relatedness
+- Explicit correction for population stratification
+- Sex-stratified analysis
+- Cross-ancestry PRS comparison
+- HPC reproducible pipeline design
+- Integration of Bash, R, Python, and external genomic tools
 
 ---
 
-# 🧠 Technical Skills Demonstrated
+# Technical Skills Demonstrated
 
 * Genome-wide association analysis
 * Logistic mixed modeling
@@ -183,7 +183,7 @@ RA_h2_Asian.log
 
 ---
 
-# 📚 References
+# References
 
 - Purcell S, Neale B, Todd-Brown K, et al. PLINK: A tool set for whole-genome association and population-based linkage analyses. *Am J Hum Genet*. 2007;81(3):559-575. [doi:10.1086/519795](https://doi.org/10.1086/519795)
 - Price AL, Patterson NJ, Plenge RM, et al. Principal components analysis corrects for stratification in genome-wide association studies. *Nat Genet*. 2006;38(8):904-909. [doi:10.1038/ng1847](https://doi.org/10.1038/ng1847)
