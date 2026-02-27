@@ -44,8 +44,8 @@ Cases met American College of Rheumatology criteria. Controls were sourced from 
 
 **Note:** NARAC genotype data are controlled-access and not included in this repository. This repo provides code and workflow only.
 
-Acknowledgment: Genetic Analysis Workshop 16 (GAW16)
-[https://doi.org/10.1002/gepi.20464](https://doi.org/10.1002/gepi.20464)
+_Acknowledgment: Genetic Analysis Workshop 16 (GAW16)
+[https://doi.org/10.1002/gepi.20464](https://doi.org/10.1002/gepi.20464)_
 
 ---
 
@@ -93,7 +93,7 @@ pca/RA_pcs.txt
 
 ---
 
-## Sex-Stratified GWAS (Mixed Model — GMMAT)
+## Sex-Stratified GWAS (Mixed Model: GMMAT)
 
 To account for relatedness and residual structure:
 
